@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="suhesap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <script src="./suhesap.js"></script>
+    <title>Su hesaplama</title>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <p>Carbon Stop.</p>
+        <ul>
+            <li><a data-language="anasayfa" href="/Anasayfa/Anasayfa.html"><i class="fa-solid fa-house "></i>Anasayfa</a></li>
+            <li><a href="/İstatistik/istatistik.html"><i class="fa-solid fa-chart-pie"></i>İstatistik</a></li>
+            <li><a href="/HaberlerAnasayfa/haberleranasayfa.html"><i class="fa-solid fa-newspaper "></i>Haberler</a>
+            </li>
+            <li><a href="/Hesaplama/Gida/gidahesap.html"><i class="fa-solid fa-calculator active"></i>Hesaplama</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i>Profilim</a></li>
+            <li class="languages">
+                <a href="#" language="ingilizce"><img data-use="en" src="/images/ingilizce.png" class="imgcls"  style="position: relative; width: 30px;" ></a>
+                <a href="#" language="turkce"><img data-use="tr" src="/images/türkce.png"  style="position: relative;" width="30px" alt="" ></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hesap-bar">
+        <ul>
+        <li><a href="/Hesaplama/Gida/gidahesap.html"><i class="fa-solid fa-utensils"></i>Gıda</a></li>
+        <li><a href="/Hesaplama/Enerji/enerjihesap.html"><i class="fa-solid fa-bolt"></i>Enerji</a></li>
+        <li><a href="/Hesaplama/Ulasim/ulasimhesap.html"><i class="fa-solid fa-car"></i>Ulaşım</a></li>
+        <li><a  class="active" href="/Hesaplama/Su/suhesap.html"><i class="fa-solid fa-droplet"></i>Su<hr></a></li>
+        <li><a href="/Hesaplama/Alisveris/alisverishesap.html"><i class="fa-solid fa-cart-shopping"></i>Alışveriş</a></li>
+    </ul>
+    </div>
+
+    <div class="metin">
+        <img src="/images/iconturuncu.png" alt="iconturuncu">
+    <p>Su için seçilebilecekler</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="/SuHesapDetay/"><img class="first" src="/images/duş.png" alt=""></a>
+                <p>Duş</p>
+                <a href="/Haberler/Gida/gidahaber.html"><button id="ayrinti">Ayrıntılar</button></a>
+            </div>
+            <div class="col-md-3">
+                <input type="button" value="3-7dk" id="bir" onclick="renkDegistir1()">
+                <input type="button" value="8-15dk" id="iki" onclick="renkDegistir2()">
+                <input type="button" value="16-25dk" id="uc" onclick="renkDegistir3()">
+                <input type="button" value="26-32dk" id="dort" onclick="renkDegistir4()">
+                <input type="button" value="33-45dk" id="bes" onclick="renkDegistir5()">
+                <input type="button" value="45- +dk" id="alti" onclick="renkDegistir6()">
+            </div>
+            <div class="col-md-3">
+                <a href="/SuHesapDetay/"><img src="/images/kişiselbakım.png" alt=""></a>
+                <p>Kişisel Bakım</p>
+                <a href="/Haberler/Gida/gidahaber.html"><button id="ayrinti">Ayrıntılar</button></a>
+            </div>
+            <div class="col-md-3">
+                <input type="button" value="3-7dk" disabled>
+                <input type="button" value="8-15dk" disabled>
+                <input type="button" value="16-25dk" disabled>
+                <input type="button" value="26-32dk" disabled>
+                <input type="button" value="33-45dk" disabled>
+                <input type="button" value="45- +dk" disabled>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="/SuHesapDetay/"><img src="/images/bulaşık.png"
+                        alt=""></a>
+                <p>Bulaşık</p>
+                <a href="/Haberler/Gida/gidahaber.html"><button id="ayrinti">Ayrıntılar</button></a>
+            </div>
+            <div class="col-md-3">
+                 <input type="button" value="3-7dk" disabled>
+                <input type="button" value="8-15dk" disabled>
+                <input type="button" value="16-25dk" disabled>
+                <input type="button" value="26-32dk" disabled>
+                <input type="button" value="33-45dk" disabled>
+                <input type="button" value="45- +dk" disabled>
+                <input class="detay" type="button" value="Makine" disabled>
+                <input class="detay" type="button" value="El ile" disabled>
+
+
+               
+            </div>
+            <div class="col-md-3">
+                <a href="/SuHesapDetay/"><img src="/images/çamaşır.png" alt=""></a>
+                <p>Çamaşır</p>
+                <a href="/Haberler/Gida/gidahaber.html"><button id="ayrinti">Ayrıntılar</button></a>
+            </div>
+            <div class="col-md-3">
+                 <input type="button" value="3-7dk" disabled>
+                <input type="button" value="8-15dk" disabled>
+                <input type="button" value="16-25dk" disabled>
+                <input type="button" value="26-32dk" disabled>
+                <input type="button" value="33-45dk" disabled>
+                <input type="button" value="45- +dk" disabled>
+                <input class="detay" type="button" value="Makine" disabled>
+                <input class="detay" type="button" value="El ile" disabled>
+            </div>
+        </div>
+     <div class="row">
+        <div class="col-md-3">
+            <a href="/SuHesapDetay/"><img src="/images/sufatura.png" alt=""></a>
+            <p>Su Faturası</p>
+            <a href="/Haberler/Gida/gidahaber.html"><button id="ayrinti">Ayrıntılar</button></a>
+        </div>
+        <div class="col-md-3">
+            <p style="font-size:20px">Aylık Su Faturanız</p>
+            <input type="text" placeholder="....................tl" disabled >
+         
+          
+        </div>
+
+        <div class="col-md-6">
+            <div class="box">
+                <a class="list" href="#popup2">Listede Yok</a>
+            </div>
+            <div id="popup2" class="overlay">
+                <div class="popup">
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <form action="/Hesaplama/Alisveris/alisverishesap.html">
+                            <label for="fname">Listede Yok</label><br>
+                            <input id="textpop" type="text"><br>
+                            <input id="buttonpop" type="submit" value="Gönder">
+                          </form> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <a class="button" href="#popup1">Hesapla</a>
+            </div>
+
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <img class="hesap" src="/images/mobilekran.png" alt="">
+                        <img class="hesap" id="img1" src="/images/qrkode.png" alt="">
+                        <p id="uyarıid">Bu alan için erişim sınırlıdır.Daha fazlası için uygulamamızı ziyaret etmeyi unutmayınız.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>

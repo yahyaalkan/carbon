@@ -1,0 +1,472 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:576px) {
+    .menu-bar ul li a {
+      font-size: 14px !important;
+    }
+    .hesap-bar ul {
+      display: inline-flex;
+      list-style: none;
+      margin-left:2% !important;
+    }
+    .menu-bar ul {
+      display: inline-flex;
+      list-style: none;
+      background-color: #ffffff;
+      border-radius: 25px;
+      margin-left: 0px;
+    
+    }
+    
+    .menu-bar ul li i {
+      margin-right: 0px !important;
+    }
+  
+    .menu-bar>ul{
+      margin-left: 0px !important;
+      width: 410px !important;
+    }
+  
+  
+    .row .col-lg-6 {
+      margin-left: 0px !important;
+    }
+    .imgcls:nth-child(2){
+      margin-right: 25px !important;
+    }
+    .button{
+        position: relative;
+        left: 150px !important;
+        top: -30px !important;
+
+        width: 180px !important;
+      }
+      .list{
+        position: relative;
+        left: -70px !important;
+      
+        
+    }
+  
+  }
+  
+  
+  @media screen and (max-width:768px) {
+    .menu-bar ul li a {
+      font-size: 14px !important;
+      margin-right: -20px !important;
+    }
+    .hesap-bar ul {
+      display: inline-flex;
+      list-style: none;
+      margin-left: 10%;
+    }
+  
+  
+    .menu-bar ul li i {
+      margin-right: 10px !important;
+    }
+  
+    .menu-bar #ulid {
+      width: 550px;
+    }
+   
+    .row .col-lg-6 {
+      margin-left: 85px;
+    }
+    .imgcls{
+      margin-right: 20px;
+    }
+    .button{
+        position: relative;
+        left: 150px;
+        width: 180px !important;
+      }
+      .list{
+        margin-left: 85px !important;
+    }
+  
+  }
+/*hesap bar*/
+.hesap-bar ul {
+    display: inline-flex;
+    list-style: none;
+    margin-left: 36%;
+}
+
+.hesap-bar ul li i {
+    margin-right: 8px;
+    color: #4ed25f;
+    font-size: 30px;
+}
+.fa-car{
+    color: #FB8C1C !important;
+}
+.hesap-bar ul li {
+    width: 50px;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+.hesap-bar ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+}
+
+.hesap-bar ul li .active {
+    color: #FB8C1C !important;
+}
+
+.hesap-bar hr{
+    color: #FB8C1C;
+    background-color: #FB8C1C;
+    height: 2px;
+    width: 35px;
+    margin-top: 0px !important;
+}
+
+/*metin*/
+.metin img {
+    width: 20px;
+    float: left;
+    margin-left: 50px;
+}
+
+.metin p {
+    position: relative;
+    font-style: bold;
+    font-family: 'SF Pro Display', sans-serif;
+    margin-bottom: 50px;
+    padding: 7px;
+    font-size: 20px;
+}
+
+/*navbar*/
+.menu-bar {
+    background-color: #5fb288;
+    /* Gradient desteklemeyen browser için */
+    background-image: linear-gradient(to bottom right, #5fb288, #4ed25f);
+    width: 100%;
+
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin-left: 100px;
+
+}
+
+.menu-bar ul li i {
+    margin-right: 8px;
+}
+
+.menu-bar ul li {
+    width: 150px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-bar ul li a .active {
+    color: #FB8C1C;
+}
+
+.menu-bar ul li a i {
+    color: #FB8C1C;
+}
+
+.menu-bar p {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu-bar ul li a .active {
+    color: #FB8C1C;
+}
+
+.menu-bar ul li a i {
+    color: #4ed25f;
+}
+
+/*buton kayıt giris*/
+
+.menu-bar .btn {
+    display: inline;
+    font-family: "Roboto";
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-weight: normal;
+    float: right;
+    position: relative;
+    bottom: 60px;
+}
+
+.menu-bar .register-btn {
+
+    width: 130px;
+    padding: 5px;
+    background-color: #4ed25f;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 1px white solid;
+    font-family: 'Roboto';
+}
+
+.menu-bar .login-btn {
+
+    width: 130px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 25px;
+    background-color: #4ed25f;
+    color: white;
+    border-radius: 50px;
+    border: 1px white solid;
+    font-family: 'Roboto';
+}
+
+.menu-bar .btn a {
+    text-decoration: none;
+}
+
+/*seçimler*/
+
+.container .row img {
+    width: 200px;
+    filter: blur(4px);
+}
+.first{
+    filter: blur(0px) !important;
+}
+
+.container .row p{
+    color: #6E7989;
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+
+#ayrinti {
+    background-color: #E8F8F7;
+    border: 1px solid #31B7AC;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px;
+    font-weight: bold;
+    color: #050517;
+    text-align: center;
+    margin-left:50px ;
+    margin-bottom: 40px;
+
+}
+
+#ayrinti:hover{
+    border: 1px solid #4ED25F ;
+    border-radius: 14px;
+    background-color:#EBFFED;
+}
+
+input[type="button"] {
+    width: 150px;
+    display: block;
+    float: left;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #6E7989;
+    font-weight: bold;
+    color: #6E7989;
+    padding: 10px;
+    white-space: pre-wrap; 
+    word-wrap: break-word
+}
+
+input[type="text"] {
+    width: 80px;
+    display: block;
+    float:left;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #6E7989;
+    color: #6E7989;
+    text-align: center;
+    margin-left: 60px;
+}
+
+
+.button {
+    text-decoration: none !important;
+    color: white;
+    float: right;
+    background-color: #4ed25f;
+    text-align: center !important;
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-style: bold;
+    font-family: 'SF Pro Display', sans-serif;
+    margin-top:50px;
+    display: inline;
+    margin-right: 410px;
+    margin-bottom: 100px;
+}
+.button:hover {
+    opacity: 1;
+    color:white;
+}
+/* listede yok */
+.list{
+    margin-left: 450px !important;
+}
+
+a[class="list"] {
+    text-decoration: none !important;
+    width: 200px;
+    height: 60px;
+    display: inline;
+    float: left;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #6E7989;
+    font-weight: bold;
+    color: #6E7989;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+    font-size: 18px;
+    text-align: center;
+    
+}
+#textpop{
+  width: 40%;
+  margin: 5px 0 22px 30%;
+  display: block;
+  border: none;
+  background:  #EBFFED;
+  box-shadow: 2px 2px 2px #c7c6c6;
+  border-radius: 6px;
+  padding:15px 15px 15px 50px;
+}
+label{
+ margin-left: 250px;
+ margin-top: 50px;
+ font-weight: bold;
+}
+#buttonpop{
+    background-color: #4ed25f;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    border-radius: 50px;
+    margin: 5px 0 22px 35%;
+}
+/* pop-up */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #4ed25f;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+.hesap{
+    filter: blur(0px) !important;
+    display: inline;
+    float: left;
+    text-align: center;
+
+}
+
+#uyarıid{
+    border: 1px solid #EBFFED;
+    background-color: #EBFFED;
+    border-radius: 50px;
+    padding:20px 30px 20px 30px;
+    float: left;
+    text-align: center;
+    width: 330px;
+    color: #050517;
+    margin-left: 10px;
+}
+
+#img1{
+    margin-top: 80px;
+    margin-left: 10px;
+    border: 1px solid black;
+    width: 330px;
+
+}
